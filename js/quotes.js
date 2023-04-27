@@ -84,8 +84,8 @@ const quotes = [
 
 const quotesDiv = document.querySelector(".quotes");
 
-const english = document.createElement("h4");
-const korean = document.createElement("h4");
+const english = document.createElement("span");
+const korean = document.createElement("span");
 
 quotesDiv.appendChild(english);
 quotesDiv.appendChild(korean);
