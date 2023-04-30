@@ -20,10 +20,15 @@
     <div class="clock"></div>
     <div class="login">
       <form class="login-form hidden">
-        <style></style>
-        <label>What is your name? <input type="text" name="name" /></label>
-        <input type="submit" value="Click" />
+        <input
+          class="login-form__input"
+          type="text"
+          name="name"
+          placeholder="What is your name?"
+        />
+        <input class="login-form__btn" type="submit" value="Click" />
       </form>
+      <span class="greeting hidden"></span>
     </div>
     <div class="toDo">What is your main focus for today?</div>
     <div class="quotes"></div>
