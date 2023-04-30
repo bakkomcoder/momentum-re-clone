@@ -138,3 +138,14 @@ input:-webkit-autofill:active {
   -webkit-transition: background-color 9999s ease-out;
   -webkit-box-shadow: 0 0 0px 1000px none inset !important;
 }
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

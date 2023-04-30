@@ -16,6 +16,13 @@ function deleteTodo(event) {
   li.remove();
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveTodos();
+  if (toDos.length <= 4) {
+    todoForm.classList.remove("hidden");
+    span.classList.add("animation-init");
+    setTimeout(function () {
+      span.classList.add("animation-fade");
+    }, 30);
+  }
 }
 
 function paintTodo(newTodo) {
@@ -28,7 +35,18 @@ function paintTodo(newTodo) {
   button.addEventListener("click", deleteTodo);
   li.appendChild(span);
   li.appendChild(button);
+  span.classList.add("animation-init");
+  button.classList.add("animation-init");
+  setTimeout(function () {
+    span.classList.add("animation-fade");
+  }, 30);
+  setTimeout(function () {
+    button.classList.add("animation-fade");
+  }, 30);
   todoList.appendChild(li);
+  if (toDos.length > 4) {
+    return todoForm.classList.add("hidden");
+  }
 }
 
 function handleTodoSubmit(event) {
