@@ -33,7 +33,16 @@
       </form>
       <span class="greeting hidden"></span>
     </div>
-    <div class="toDo">What is your main focus for today?</div>
+    <div class="toDo">
+      <form class="todo-form">
+        <input
+          type="text"
+          placeholder="What is your main focus for today?"
+          required
+        />
+      </form>
+      <ul class="todo-list"></ul>
+    </div>
     <div class="quotes"></div>
   </body>
   <script src="js/app.js"></script>
@@ -41,7 +50,8 @@
   <script src="js/clock.js"></script>
   <script src="js/quotes.js"></script>
   <script src="js/background.js"></script>
-  <script src="js/weather.js"></script>
+  <!-- <script src="js/weather.js"></script> -->
+  <script src="js/todo.js"></script>
   <script
     src="https://kit.fontawesome.com/ee134bcd52.js"
     crossorigin="anonymous"
