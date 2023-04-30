@@ -8,10 +8,6 @@ body {
   color: white;
 }
 
-.hidden {
-  display: none;
-}
-
 .status-bar {
   display: flex;
   justify-content: space-between;
@@ -99,4 +95,8 @@ img {
   bottom: 0px;
   z-index: -1;
   opacity: 80%;
+}
+
+.hidden {
+  display: none;
 }
